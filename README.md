@@ -6,7 +6,7 @@
 #define DHTTYPE DHT22
 
 DHT dht(DHTPIN, DHTTYPE);
-LiquidCrystal_I2C lcd(0x27, 16, 2); // Change address if needed
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 void setup() {
   Serial.begin(9600);
@@ -21,7 +21,7 @@ void setup() {
 }
 
 void loop() {
-  delay(2000); // Wait between measurements
+  delay(2000);
   
   float h = dht.readHumidity();
   float t = dht.readTemperature();
