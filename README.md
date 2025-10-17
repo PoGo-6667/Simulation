@@ -1,5 +1,4 @@
 # Humidity Temperature Sensor System
-c
 #include <DHT.h>
 #include <LiquidCrystal_I2C.h>
 
